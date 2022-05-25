@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <script src="https://kit.fontawesome.com/187167ec46.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- navbar section starts here-->
+    <div id="navbar" class="navbar">
+        <div class="left-navbar">
+            <span title="Menu" id="navbar-menu">
+                <i class="fas fa-bars"></i>
+            </span>
+            <img title="YouTube Home" class="logo-pic" src="./img/logo.png">
+        </div>
+        <div class="middle-navbar">
+            <div class="search-box" title="Search Something!">
+                <input type="search" placeholder="Search">
+                <div class="search-icon"><i class="fas fa-search"></i></div>
+            </div>
+            <div class="microphone-icon" title="Say Something!"><i class="fas fa-microphone"></i></div>
+        </div>
+        <div class="right-navbar">
+            <div class="nav-icon video" id="video-icon" title="Add Video"><i id="video-icon" class="fa-solid fa-video"></i></div>
+            <div class="nav-icon list" id="youtube-icon" title="See Menu"><i id="youtube-icon"class="fa-solid fa-list"></i></div>
+            <div class="nav-icon notif" id="notification-icon" title="Notification"><i id="notification-icon" class="fa-solid fa-bell"></i></div>
+            <div class="profil-pic">
+                <img title="Profil" src="./img/profil.jpg" alt="profil picture">
+            </div>
+        </div>
+        <div id="video-menu">
+            <div class="add-video">
+                <div class="add-video-1">
+                    <i class="fa-solid fa-circle-play"></i>
+                </div>
+                <p>Upload video</p>
+            </div>
+            <div class="live-stream">
+                <div class="add-stream">
+                    <img src="./img/stream.png">
+                </div>
+                <p>Go live</p>
+            </div>
+        </div>
+        <div id="youtube-menu">
+            <div class="youtube-tv">
+                <img src="./img/square-logo.png" title="YouTube TV">
+                <p>YouTube TV</p>
+            </div>
+            <hr>
+            <div class="youtube-music">
+                <div class="youtube-music1">
+                    <img src="./img/round-logo.png" title="YouTube Music">
+                    <p class="yt1">YouTube Music</p>    
+                </div>
+                <div class="youtube-music2">
+                    <img src="./img/youtubekids.png" title="Youtube Kids">
+                    <p class="yt2">YouTube Kids</p>
+                </div>                
+            </div>
+            <hr>
+            <div class="youtube-artist">
+                <img src="./img/youtubeartists.png" title="YouTube for Artists">
+                <p>YouTube for Artists</p>
+            </div>
+        </div>
+        <div id="notification-list">
+            <div class="notification-header">
+                <p class="notification-title">Notification</p>
+                <i title="Setting" class="fas fa-cog"></i>
+            </div>
+            <ul class="notification-content-list">
+                <li class="notification-content-1">
+                    <img class="channel-logo" src="./img/notif-content1.png" title="Mobile Legend Bang Bang">
+                    <div class="content-des">
+                        <p>Mobile Legends: Bang Bang Official is live: (ENGLISH) MPL-PH S9 Week 6 Day 1- REPLAY</p>
+                        <span class="content-date">6 hours ago</span>
+                    </div>
+                    <img class="content-thumbnail" src="./img/thumbnail1.jpeg">
+                    <div class="content-setting">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </li>
+                <li class="notification-content-1">
+                    <img class="channel-logo" src="./img/notif-content2.webp" title="Atta halilintar">
+                    <div class="content-des">
+                        <p>Rizky Febian & Atta Halilintar Ikut Terseret Kasus Doni Salmanan| Atta Halilintar</p>
+                        <span class="content-date">9 hours ago</span>
+                    </div>
+                    <img class="content-thumbnail" src="./img/thumbnail2.jpg">
+                    <div class="content-setting">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </li>
+                <li class="notification-content-1">
+                    <img class="channel-logo" src="./img/notif-content3.png" title="Avenged Sevenfold">
+                    <div class="content-des">
+                        <p>Avenged Sevenfold - So Far Away [Official Music Video]</p>
+                        <span class="content-date">14 hours ago</span>
+                    </div>
+                    <img class="content-thumbnail" src="./img/thumbnail3.jpg">
+                    <div class="content-setting">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </li>
+                <li class="notification-content-1">
+                    <img class="channel-logo" src="./img/notif-content4.jpg" title="Intens Investigasi">
+                    <div class="content-des">
+                        <p>Di Tanah Suci, Fuji & Thoriq Badal Umroh Almh.Vanessa & Alm.Bibi | Intens Investigasi | Eps 1519</p>
+                        <span class="content-date">1 day ago</span>
+                    </div>
+                    <img class="content-thumbnail" src="./img/thumbnail4.jpg">
+                    <div class="content-setting">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </li>
+                <li class="notification-content-1">
+                    <img class="channel-logo" src="./img/notif-content1.png" title="Mobile Legend Bang Bang">
+                    <div class="content-des">
+                        <p>Mobile Legends: Bang Bang Official is live: (ENGLISH) MPL-PH S9 Week 6 Day 1- REPLAY</p>
+                        <span class="content-date">6 hours ago</span>
+                    </div>
+                    <img class="content-thumbnail" src="./img/thumbnail1.jpeg">
+                    <div class="content-setting">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </li>
+                <li class="notification-content-1">
+                    <img class="channel-logo" src="./img/notif-content2.webp" title="Atta halilintar">
+                    <div class="content-des">
+                        <p>Rizky Febian & Atta Halilintar Ikut Terseret Kasus Doni Salmanan| Atta Halilintar</p>
+                        <span class="content-date">9 hours ago</span>
+                    </div>
+                    <img class="content-thumbnail" src="./img/thumbnail2.jpg">
+                    <div class="content-setting">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </li>
+                <li class="notification-content-1">
+                    <img class="channel-logo" src="./img/notif-content3.png" title="Avenged Sevenfold">
+                    <div class="content-des">
+                        <p>Avenged Sevenfold - So Far Away [Official Music Video]</p>
+                        <span class="content-date">14 hours ago</span>
+                    </div>
+                    <img class="content-thumbnail" src="./img/thumbnail3.jpg">
+                    <div class="content-setting">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </li>
+                <li class="notification-content-1">
+                    <img class="channel-logo" src="./img/notif-content4.jpg" title="Intens Investigasi">
+                    <div class="content-des">
+                        <p>Di Tanah Suci, Fuji & Thoriq Badal Umroh Almh.Vanessa & Alm.Bibi | Intens Investigasi | Eps 1519</p>
+                        <span class="content-date">1 day ago</span>
+                    </div>
+                    <img class="content-thumbnail" src="./img/thumbnail4.jpg">
+                    <div class="content-setting">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!-- navbar section ends here -->
+
+<!-- Side Menu section starts here -->
+    <div id="youtube-side-bar" class="youtube-side-bar">
+        <ul class="first-sidebar">
+            <li id="home-side-bar" title="Home">
+                <img src="./img/home-icon.png">
+                <p>Home</p>
+            </li>
+            <li id="explore-side-bar" title="Explore">
+                <i class="far fa-compass"></i>
+                <p>Explore</p>
+            </li>
+            <li id="shorts-side-bar" title="Shorts">
+                <img src="./img/youtube-short.png">
+                <p>Shorts</p>
+            </li>
+            <li id="subcription-side-bar" title="Subcriptions">
+                <img src="./img/subcription-icon.png">
+                <p>Subcriptions</p>
+            </li>
+        </ul>
+        <hr>
+        <ul class="second-sidebar">
+            <li id="library-side-bar" title="Library">
+                <img src="./img/library.png">
+                <p>Library</p>
+            </li>
+            <li id="history-side-bar" title="History">
+                <i class="fas fa-history"></i>
+                <p>History</p>
+            </li>
+            <li id="yourvid-side-bar" title="Your videos">
+                <img src="./img/your-video.png"> 
+                <p>Your videos</p>
+            </li>
+            <li id="whatch-side-bar" title="Watch later">
+                <i class="far fa-clock"></i>
+                <p>Watch later</p>
+            </li>
+            <li id="liked-side-bar" title="Liked videos">
+                <i class="far fa-thumbs-up"></i>
+                <p>Liked videos</p>
+            </li>
+        </ul>
+        <hr>
+        <p class="subcription-title">subcriptions</p>
+        <ul class="subcription-channel-sidebar">
+            <li id="subcription-side-bar" title="Learn Dutch with DutchPod101.com">
+                <img src="./img/subs1.png">
+                <p>Learn Dutch with DutchPod101.com</p>
+            </li>
+            <li id="subcription-side-bar" title="Eza Hazami">
+                <img src="./img/subs2.jpg">
+                <p>Eza Hazami</p>
+            </li>
+            <li id="subcription-side-bar" title="Learn Japanese with JapanesePod101.com">
+                <img src="./img/subs3.jpg">
+                <p>Learn Japanese with JapanesePod101.com</p>
+            </li>
+            <li id="subcription-side-bar" title="MPL Indonesia">
+                <img src="./img/subs4.jpg">
+                <p>MPL Indonesia</p>
+            </li>
+            <li id="subcription-side-bar" title="Fiki Naki">
+                <img src="./img/subs5.jpg">
+                <p>Fiki Naki</p>
+            </li>
+            <li id="subcription-side-bar" title="Easy Tutorials">
+                <img src="./img/subs6.png">
+                <p>Easy Tutorials</p>
+            </li>
+            <li id="subcription-side-bar" title="CodingNepal">
+                <img src="./img/subs7.png">
+                <p>CodingNepal</p>
+            </li>
+            <li id="subcription-side-bar" class="down-arrow" title="Show 53 more">
+                <i class="fas fa-chevron-down"></i>
+                <p>Show 53 more</p>
+            </li>
+        </ul>
+        <hr>
+        <p class="more-title">more from youtube</p>
+        <ul class="more-sidebar">
+            <li id="more-side-bar" title="YouTube Premium">
+                <img src="./img/youtube-premium.png">
+                <p>YouTube Premium</p>
+            </li>
+            <li id="more-side-bar" title="Movies">
+                <img src="./img/movies.png">
+                <p>Movies</p>
+            </li>
+            <li id="more-side-bar" title="Gaming">
+                <img src="./img/games.png">
+                <p>Gaming</p>
+            </li>
+            <li id="more-side-bar" title="Live">
+                <img src="./img/stream.png">
+                <p>Live</p>
+            </li>
+            <li id="more-side-bar" title="Sports">
+                <img src="./img/trophy.png">
+                <p>Sports</p>
+            </li>
+        </ul>
+        <hr>
+        <div class="youtube-authorization">
+            <div class="top-authorization">
+                <span>About</span>
+                <span>Press</span>
+                <span>Copyright</span>
+                <span>Contact us</span>
+                <span>Creators</span>
+                <span>Advertise</span>
+                <span>Developers</span>
+            </div>
+            <div class="mid-authorization">
+                <span>Terms</span>
+                <span>Privacy</span>
+                <span>Policy & Safety</span>
+                <span>How YouTube works</span>
+                <span>Test new features</span>
+            </div>
+            <div class="bot-authorization">
+                <p><i class="far fa-copyright"></i> 2022 Google LLC</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="simple-side-bar" id="simple-side-bar">
+        <div class="simple-home-side-bar">
+            <img src="./img/home-icon.png">
+            <p>Home</p>
+        </div>
+        <div class="simple-explore-side-bar">
+            <i class="far fa-compass"></i>
+            <p>Explore</p>
+        </div>
+        <div class="simple-shorts-side-bar">
+            <img src="./img/youtube-short.png">
+            <p>Shorts</p>
+        </div>
+        <div class="simple-subcription-side-bar">
+            <img src="./img/subcription-icon.png">
+            <p>Subcriptions</p>
+        </div>
+        <div class="simple-library-side-bar">
+            <img src="./img/library.png">
+            <p>Library</p>
+        </div>
+    </div>
+<!-- Side Menu section ends here -->
+
+<!-- Main Content section starts here -->
+<div class="main-content">
+    <!-- scrolling video sections starts here -->
+    <div class="scrolling-video">
+        <hr>
+        <div class="scrolling-video-list">
+            <div class="scrolling-video-item active">
+                <div class="scrolling-video-text">
+                    All
+                </div>
+            </div>
+            <div class="scrolling-video-item">
+                <div class="scrolling-video-text">
+                    CSS
+                </div>
+            </div>
+            <div class="scrolling-video-item">
+                <div class="scrolling-video-text">
+                    Computer Application
+                </div>
+            </div>
+            <div class="scrolling-video-item">
+                <div class="scrolling-video-text">
+                    Mixes
+                </div>
+            </div>
+            <div class="scrolling-video-item">
+                <div class="scrolling-video-text">
+                    Music
+                </div>
+            </div>
+            <div class="scrolling-video-item">
+                <div class="scrolling-video-text">
+                    Mobile Legends: Bang Bang
+                </div>
+            </div>
+            <div class="scrolling-video-item">
+                <div class="scrolling-video-text">
+                    Live
+                </div>
+            </div>
+            <div class="scrolling-video-item">
+                <div class="scrolling-video-text">
+                    Adobe Photoshop
+                </div>
+            </div>
+            <div class="scrolling-video-item">
+                <div class="scrolling-video-text">
+                    Podcasts
+                </div>
+            </div>
+            <div class="scrolling-video-item">
+                <div class="scrolling-video-text">
+                    3D Computer Graphics
+                </div>
+            </div>
+            <div class="scrolling-video-item">
+                <div class="scrolling-video-text">
+                    Noah
+                </div>
+            </div>
+            <div class="scrolling-video-item">
+                <div class="scrolling-video-text">
+                    Comedy
+                </div>
+            </div>
+            <div class="scrolling-video-item">
+                <div class="scrolling-video-text">
+                    Ria Ricis
+                </div>
+            </div>
+            <div class="scrolling-video-item">
+                <div class="scrolling-video-text">
+                    Guitar Chords
+                </div>
+            </div>
+            <div class="scrolling-video-item">
+                <div class="scrolling-video-text">
+                    Music Indie
+                </div>
+            </div>
+            <div class="scrolling-video-item">
+                <div class="scrolling-video-text">
+                    Managa
+                </div>
+            </div>
+            <div class="scrolling-video-item">
+                <div class="scrolling-video-text">
+                    Romaria
+                </div>
+            </div>
+            <div class="scrolling-video-item">
+                <div class="scrolling-video-text">
+                    Recently uploaded
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!-- scrolling video sections ends here -->
+
+    <!-- video card content section starts here -->
+    <div class="video-card-list">
+        <div class="video-card-content">
+            <div class="video-thumbnail">
+                <a href="opened.html"><img src="./img/thumbnail video1.webp"></a>
+                <div class="video-description">
+                    <div class="top-video-description">
+                        <img src="./img/subs6.png">
+                        <a href="opened.html" title="How To Make A Website Like YouTube Using HTML CSS JS | Video Sharing Website Design">How To Make A Website Like YouTube Using HTML CSS JS | Video Sharing Website Design</a>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom-video-description">
+                        <p class="channel-name" title="Easy Tutorials">Easy Tutorials</p>
+                        <p class="views">219k views</p>
+                        <p class="date"><i class="fas fa-circle"></i> 8 months ago</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="video-card-content">
+            <div class="video-thumbnail">
+                <a href="#"><img src="./img/thumbnail video2.webp"></a>
+                <div class="video-description">
+                    <div class="top-video-description">
+                        <img src="./img/channel-name1.jpg">
+                        <a href="#" title="BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY">BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY</a>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom-video-description">
+                        <p class="channel-name" title="Btr Kenn">Btr Kenn</p>
+                        <p class="views">12k views</p>
+                        <p class="date"><i class="fas fa-circle"></i> 3 days ago</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="video-card-content">
+            <div class="video-thumbnail">
+                <a href="#"><img src="./img/thumbnail video3.webp"></a>
+                <div class="video-description">
+                    <div class="top-video-description">
+                        <img src="./img/channel-name2.jpg">
+                        <a href="#" title="How To Make A Website Like YouTube Using HTML CSS JS | Video Sharing Website Design">CUMAN TAHAN 6 BULAN?? KISAH HOROR SANTRIWATI CANTIK DI PONDOK PESANTREN</a>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom-video-description">
+                        <p class="channel-name" title="RJL 5 - Fajar Aditya">RJL 5 - Fajar Aditya <span class="checked-channel"><i class="fas fa-check-circle"></i></span></p>
+                        <p class="views">1.8M views</p>
+                        <p class="date"><i class="fas fa-circle"></i> 12 days ago</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="video-card-content">
+            <div class="video-thumbnail">
+                <a href="#"><img src="./img/thumbnail video 4.webp"></a>
+                <div class="video-description">
+                    <div class="top-video-description">
+                        <img src="./img/channel-name3.jpg">
+                        <a href="#" title="How To Make A Website Like YouTube Using HTML CSS JS | Video Sharing Website Design">By One Yang BENAR!! 5 VS 1 Niat Mau Bully Gua Biar Kena MENTAL!!! SQUAD BKB DAJJAL!!</a>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom-video-description">
+                        <p class="channel-name" title="GoodTime GAMING">GoodTime GAMING <span class="checked-channel"><i class="fas fa-check-circle"></i></span></p>
+                        <p class="views">573k views</p>
+                        <p class="date"><i class="fas fa-circle"></i> 3 days ago</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="video-card-content">
+            <div class="video-thumbnail">
+                <a href="#"><img src="./img/thumbnail video5.webp"></a>
+                <div class="video-description">
+                    <div class="top-video-description">
+                        <img src="./img/subs5.jpg">
+                        <a href="#" title="How To Make A Website Like YouTube Using HTML CSS JS | Video Sharing Website Design">Giulia Baru Bangun, Aku Langsung Video Call !! WKWKWK - Ome.TV Internasional</a>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom-video-description">
+                        <p class="channel-name" title="Fiki Naki">Fiki Naki <span class="checked-channel"><i class="fas fa-check-circle"></i></span></p>
+                        <p class="views">2.6M views</p>
+                        <p class="date"><i class="fas fa-circle"></i> 2 months ago</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="video-card-content">
+            <div class="video-thumbnail">
+                <a href="#"><img src="./img/thumbnail video6.webp"></a>
+                <div class="video-description">
+                    <div class="top-video-description">
+                        <img src="./img/channel-name4.jpg">
+                        <a href="#" title="Begini Penyesalan Priyanto Terdakwa Kasus Tabrak Sejoli di Nagreg, Sebut Ada Setan Masuk Kepalanya">Begini Penyesalan Priyanto Terdakwa Kasus Tabrak Sejoli di Nagreg, Sebut Ada Setan Masuk Kepalanya</a>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom-video-description">
+                        <p class="channel-name" title="Tribunnews">Tribunnews <span class="checked-channel"><i class="fas fa-check-circle"></i></span></p>
+                        <p class="views">2.7k views</p>
+                        <p class="date"><i class="fas fa-circle"></i> 3 hours ago</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="video-card-content">
+            <div class="video-thumbnail">
+                <a href="#"><img src="./img/thumbnail video7.webp"></a>
+                <div class="video-description">
+                    <div class="top-video-description">
+                        <img src="./img/channel-name5.jpg">
+                        <a href="#" title="JOHNSON EXPLANE FT RRQ HOSHI ! SESUAI APLIKASI YA KAK !">JOHNSON EXPLANE FT RRQ HOSHI ! SESUAI APLIKASI YA KAK !</a>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom-video-description">
+                        <p class="channel-name" title="R7 Tatsumaki">R7 Tatsumaki <span class="checked-channel"><i class="fas fa-check-circle"></i></span></p>
+                        <p class="views">27k views</p>
+                        <p class="date"><i class="fas fa-circle"></i> 3 hours ago</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="video-card-content">
+            <div class="video-thumbnail">
+                <a href="#"><img src="./img/thumbnail video8.webp"></a>
+                <div class="video-description">
+                    <div class="top-video-description">
+                        <img src="./img/channel-name1.jpg">
+                        <a href="#" title="KETEMU TIM PELATNAS SEA GAMES KAMBOJA LAGI LATIAN , JOHNSONNYA GG PARAH - BTR KENN LING GAMEPLAY">KETEMU TIM PELATNAS SEA GAMES KAMBOJA LAGI LATIAN , JOHNSONNYA GG PARAH - BTR KENN LING GAMEPLAY</a>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom-video-description">
+                        <p class="channel-name" title="Btr Kenn">Btr Kenn</p>
+                        <p class="views">11k views</p>
+                        <p class="date"><i class="fas fa-circle"></i> 2 weeks ago</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="video-card-content">
+            <div class="video-thumbnail">
+                <a href="#"><img src="./img/thumbnail video1.webp"></a>
+                <div class="video-description">
+                    <div class="top-video-description">
+                        <img src="./img/subs6.png">
+                        <a href="#" title="How To Make A Website Like YouTube Using HTML CSS JS | Video Sharing Website Design">How To Make A Website Like YouTube Using HTML CSS JS | Video Sharing Website Design</a>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom-video-description">
+                        <p class="channel-name" title="Easy Tutorials">Easy Tutorials</p>
+                        <p class="views">219k views</p>
+                        <p class="date"><i class="fas fa-circle"></i> 8 months ago</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="video-card-content">
+            <div class="video-thumbnail">
+                <a href="#"><img src="./img/thumbnail video2.webp"></a>
+                <div class="video-description">
+                    <div class="top-video-description">
+                        <img src="./img/channel-name1.jpg">
+                        <a href="#" title="BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY">BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY</a>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom-video-description">
+                        <p class="channel-name" title="Btr Kenn">Btr Kenn</p>
+                        <p class="views">12k views</p>
+                        <p class="date"><i class="fas fa-circle"></i> 3 days ago</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="video-card-content">
+            <div class="video-thumbnail">
+                <a href="#"><img src="./img/thumbnail video3.webp"></a>
+                <div class="video-description">
+                    <div class="top-video-description">
+                        <img src="./img/channel-name2.jpg">
+                        <a href="#" title="How To Make A Website Like YouTube Using HTML CSS JS | Video Sharing Website Design">CUMAN TAHAN 6 BULAN?? KISAH HOROR SANTRIWATI CANTIK DI PONDOK PESANTREN</a>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom-video-description">
+                        <p class="channel-name" title="RJL 5 - Fajar Aditya">RJL 5 - Fajar Aditya <span class="checked-channel"><i class="fas fa-check-circle"></i></span></p>
+                        <p class="views">1.8M views</p>
+                        <p class="date"><i class="fas fa-circle"></i> 12 days ago</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="video-card-content">
+            <div class="video-thumbnail">
+                <a href="#"><img src="./img/thumbnail video 4.webp"></a>
+                <div class="video-description">
+                    <div class="top-video-description">
+                        <img src="./img/channel-name3.jpg">
+                        <a href="#" title="How To Make A Website Like YouTube Using HTML CSS JS | Video Sharing Website Design">By One Yang BENAR!! 5 VS 1 Niat Mau Bully Gua Biar Kena MENTAL!!! SQUAD BKB DAJJAL!!</a>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom-video-description">
+                        <p class="channel-name" title="GoodTime GAMING">GoodTime GAMING <span class="checked-channel"><i class="fas fa-check-circle"></i></span></p>
+                        <p class="views">573k views</p>
+                        <p class="date"><i class="fas fa-circle"></i> 3 days ago</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="video-card-content">
+            <div class="video-thumbnail">
+                <a href="#"><img src="./img/thumbnail video5.webp"></a>
+                <div class="video-description">
+                    <div class="top-video-description">
+                        <img src="./img/subs5.jpg">
+                        <a href="#" title="How To Make A Website Like YouTube Using HTML CSS JS | Video Sharing Website Design">Giulia Baru Bangun, Aku Langsung Video Call !! WKWKWK - Ome.TV Internasional</a>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom-video-description">
+                        <p class="channel-name" title="Fiki Naki">Fiki Naki <span class="checked-channel"><i class="fas fa-check-circle"></i></span></p>
+                        <p class="views">2.6M views</p>
+                        <p class="date"><i class="fas fa-circle"></i> 2 months ago</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="video-card-content">
+            <div class="video-thumbnail">
+                <a href="#"><img src="./img/thumbnail video6.webp"></a>
+                <div class="video-description">
+                    <div class="top-video-description">
+                        <img src="./img/channel-name4.jpg">
+                        <a href="#" title="Begini Penyesalan Priyanto Terdakwa Kasus Tabrak Sejoli di Nagreg, Sebut Ada Setan Masuk Kepalanya">Begini Penyesalan Priyanto Terdakwa Kasus Tabrak Sejoli di Nagreg, Sebut Ada Setan Masuk Kepalanya</a>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom-video-description">
+                        <p class="channel-name" title="Tribunnews">Tribunnews <span class="checked-channel"><i class="fas fa-check-circle"></i></span></p>
+                        <p class="views">2.7k views</p>
+                        <p class="date"><i class="fas fa-circle"></i> 3 hours ago</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="video-card-content">
+            <div class="video-thumbnail">
+                <a href="#"><img src="./img/thumbnail video7.webp"></a>
+                <div class="video-description">
+                    <div class="top-video-description">
+                        <img src="./img/channel-name5.jpg">
+                        <a href="#" title="JOHNSON EXPLANE FT RRQ HOSHI ! SESUAI APLIKASI YA KAK !">JOHNSON EXPLANE FT RRQ HOSHI ! SESUAI APLIKASI YA KAK !</a>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom-video-description">
+                        <p class="channel-name" title="R7 Tatsumaki">R7 Tatsumaki <span class="checked-channel"><i class="fas fa-check-circle"></i></span></p>
+                        <p class="views">27k views</p>
+                        <p class="date"><i class="fas fa-circle"></i> 3 hours ago</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="video-card-content">
+            <div class="video-thumbnail">
+                <a href="#"><img src="./img/thumbnail video8.webp"></a>
+                <div class="video-description">
+                    <div class="top-video-description">
+                        <img src="./img/channel-name1.jpg">
+                        <a href="#" title="KETEMU TIM PELATNAS SEA GAMES KAMBOJA LAGI LATIAN , JOHNSONNYA GG PARAH - BTR KENN LING GAMEPLAY">KETEMU TIM PELATNAS SEA GAMES KAMBOJA LAGI LATIAN , JOHNSONNYA GG PARAH - BTR KENN LING GAMEPLAY</a>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom-video-description">
+                        <p class="channel-name" title="Btr Kenn">Btr Kenn</p>
+                        <p class="views">11k views</p>
+                        <p class="date"><i class="fas fa-circle"></i> 2 weeks ago</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- video card content section ends here -->
+</div>
+<!-- Main Content section ends here -->
+<script src="script.js"></script>
+</body>
+</html>

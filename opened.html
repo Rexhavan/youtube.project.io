@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Opened</title>
+    <script src="https://kit.fontawesome.com/187167ec46.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="opened.css">
+</head>
+<body>
+
+    
+<!-- navbar section starts here-->
+<div id="navbar" class="navbar">
+    <div class="left-navbar">
+        <span title="Menu" id="navbar-menu">
+            <i class="fas fa-bars"></i>
+        </span>
+        <img title="YouTube Home" class="logo-pic" src="./img/logo.png">
+    </div>
+    <div class="middle-navbar">
+        <div class="search-box" title="Search Something!">
+            <input type="search" placeholder="Search">
+            <div class="search-icon"><i class="fas fa-search"></i></div>
+        </div>
+        <div class="microphone-icon" title="Say Something!"><i class="fas fa-microphone"></i></div>
+    </div>
+    <div class="right-navbar">
+        <div class="nav-icon video" id="video-icon" title="Add Video"><i id="video-icon" class="fa-solid fa-video"></i></div>
+        <div class="nav-icon list" id="youtube-icon" title="See Menu"><i id="youtube-icon" class="fa-solid fa-list"></i></div>
+        <div class="nav-icon notif" id="notification-icon" title="Notification"><i id="notification-icon" class="fa-solid fa-bell"></i></div>
+        <div class="profil-pic">
+            <img title="Profil" src="./img/profil.jpg" alt="profil picture">
+        </div>
+    </div>
+    <div id="video-menu">
+        <div class="add-video">
+            <div class="add-video-1">
+                <i class="fa-solid fa-circle-play"></i>
+            </div>
+            <p>Upload video</p>
+        </div>
+        <div class="live-stream">
+            <div class="add-stream">
+                <img src="./img/stream.png">
+            </div>
+            <p>Go live</p>
+        </div>
+    </div>
+    <div id="youtube-menu">
+        <div class="youtube-tv">
+            <img src="./img/square-logo.png" title="YouTube TV">
+            <p>YouTube TV</p>
+        </div>
+        <hr>
+        <div class="youtube-music">
+            <div class="youtube-music1">
+                <img src="./img/round-logo.png" title="YouTube Music">
+                <p class="yt1">YouTube Music</p>    
+            </div>
+            <div class="youtube-music2">
+                <img src="./img/youtubekids.png" title="Youtube Kids">
+                <p class="yt2">YouTube Kids</p>
+            </div>                
+        </div>
+        <hr>
+        <div class="youtube-artist">
+            <img src="./img/youtubeartists.png" title="YouTube for Artists">
+            <p>YouTube for Artists</p>
+        </div>
+    </div>
+    <div id="notification-list">
+        <div class="notification-header">
+            <p class="notification-title">Notification</p>
+            <i title="Setting" class="fas fa-cog"></i>
+        </div>
+        <ul class="notification-content-list">
+            <li class="notification-content-1">
+                <img class="channel-logo" src="./img/notif-content1.png" title="Mobile Legend Bang Bang">
+                <div class="content-des">
+                    <p>Mobile Legends: Bang Bang Official is live: (ENGLISH) MPL-PH S9 Week 6 Day 1- REPLAY</p>
+                    <span class="content-date">6 hours ago</span>
+                </div>
+                <img class="content-thumbnail" src="./img/thumbnail1.jpeg">
+                <div class="content-setting">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </li>
+            <li class="notification-content-1">
+                <img class="channel-logo" src="./img/notif-content2.webp" title="Atta halilintar">
+                <div class="content-des">
+                    <p>Rizky Febian & Atta Halilintar Ikut Terseret Kasus Doni Salmanan| Atta Halilintar</p>
+                    <span class="content-date">9 hours ago</span>
+                </div>
+                <img class="content-thumbnail" src="./img/thumbnail2.jpg">
+                <div class="content-setting">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </li>
+            <li class="notification-content-1">
+                <img class="channel-logo" src="./img/notif-content3.png" title="Avenged Sevenfold">
+                <div class="content-des">
+                    <p>Avenged Sevenfold - So Far Away [Official Music Video]</p>
+                    <span class="content-date">14 hours ago</span>
+                </div>
+                <img class="content-thumbnail" src="./img/thumbnail3.jpg">
+                <div class="content-setting">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </li>
+            <li class="notification-content-1">
+                <img class="channel-logo" src="./img/notif-content4.jpg" title="Intens Investigasi">
+                <div class="content-des">
+                    <p>Di Tanah Suci, Fuji & Thoriq Badal Umroh Almh.Vanessa & Alm.Bibi | Intens Investigasi | Eps 1519</p>
+                    <span class="content-date">1 day ago</span>
+                </div>
+                <img class="content-thumbnail" src="./img/thumbnail4.jpg">
+                <div class="content-setting">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </li>
+            <li class="notification-content-1">
+                <img class="channel-logo" src="./img/notif-content1.png" title="Mobile Legend Bang Bang">
+                <div class="content-des">
+                    <p>Mobile Legends: Bang Bang Official is live: (ENGLISH) MPL-PH S9 Week 6 Day 1- REPLAY</p>
+                    <span class="content-date">6 hours ago</span>
+                </div>
+                <img class="content-thumbnail" src="./img/thumbnail1.jpeg">
+                <div class="content-setting">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </li>
+            <li class="notification-content-1">
+                <img class="channel-logo" src="./img/notif-content2.webp" title="Atta halilintar">
+                <div class="content-des">
+                    <p>Rizky Febian & Atta Halilintar Ikut Terseret Kasus Doni Salmanan| Atta Halilintar</p>
+                    <span class="content-date">9 hours ago</span>
+                </div>
+                <img class="content-thumbnail" src="./img/thumbnail2.jpg">
+                <div class="content-setting">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </li>
+            <li class="notification-content-1">
+                <img class="channel-logo" src="./img/notif-content3.png" title="Avenged Sevenfold">
+                <div class="content-des">
+                    <p>Avenged Sevenfold - So Far Away [Official Music Video]</p>
+                    <span class="content-date">14 hours ago</span>
+                </div>
+                <img class="content-thumbnail" src="./img/thumbnail3.jpg">
+                <div class="content-setting">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </li>
+            <li class="notification-content-1">
+                <img class="channel-logo" src="./img/notif-content4.jpg" title="Intens Investigasi">
+                <div class="content-des">
+                    <p>Di Tanah Suci, Fuji & Thoriq Badal Umroh Almh.Vanessa & Alm.Bibi | Intens Investigasi | Eps 1519</p>
+                    <span class="content-date">1 day ago</span>
+                </div>
+                <img class="content-thumbnail" src="./img/thumbnail4.jpg">
+                <div class="content-setting">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- navbar section ends here -->
+
+
+<!-- Side Menu section starts here -->
+    <div id="youtube-side-bar" class="youtube-side-bar">
+        <ul class="first-sidebar">
+            <li id="home-side-bar" title="Home">
+                <img src="./img/home-icon.png">
+                <p>Home</p>
+            </li>
+            <li id="explore-side-bar" title="Explore">
+                <i class="far fa-compass"></i>
+                <p>Explore</p>
+            </li>
+            <li id="shorts-side-bar" title="Shorts">
+                <img src="./img/youtube-short.png">
+                <p>Shorts</p>
+            </li>
+            <li id="subcription-side-bar" title="Subcriptions">
+                <img src="./img/subcription-icon.png">
+                <p>Subcriptions</p>
+            </li>
+        </ul>
+        <hr>
+        <ul class="second-sidebar">
+            <li id="library-side-bar" title="Library">
+                <img src="./img/library.png">
+                <p>Library</p>
+            </li>
+            <li id="history-side-bar" title="History">
+                <i class="fas fa-history"></i>
+                <p>History</p>
+            </li>
+            <li id="yourvid-side-bar" title="Your videos">
+                <img src="./img/your-video.png"> 
+                <p>Your videos</p>
+            </li>
+            <li id="whatch-side-bar" title="Watch later">
+                <i class="far fa-clock"></i>
+                <p>Watch later</p>
+            </li>
+            <li id="liked-side-bar" title="Liked videos">
+                <i class="far fa-thumbs-up"></i>
+                <p>Liked videos</p>
+            </li>
+        </ul>
+        <hr>
+        <p class="subcription-title">subcriptions</p>
+        <ul class="subcription-channel-sidebar">
+            <li id="subcription-side-bar" title="Learn Dutch with DutchPod101.com">
+                <img src="./img/subs1.png">
+                <p>Learn Dutch with DutchPod101.com</p>
+            </li>
+            <li id="subcription-side-bar" title="Eza Hazami">
+                <img src="./img/subs2.jpg">
+                <p>Eza Hazami</p>
+            </li>
+            <li id="subcription-side-bar" title="Learn Japanese with JapanesePod101.com">
+                <img src="./img/subs3.jpg">
+                <p>Learn Japanese with JapanesePod101.com</p>
+            </li>
+            <li id="subcription-side-bar" title="MPL Indonesia">
+                <img src="./img/subs4.jpg">
+                <p>MPL Indonesia</p>
+            </li>
+            <li id="subcription-side-bar" title="Fiki Naki">
+                <img src="./img/subs5.jpg">
+                <p>Fiki Naki</p>
+            </li>
+            <li id="subcription-side-bar" title="Easy Tutorials">
+                <img src="./img/subs6.png">
+                <p>Easy Tutorials</p>
+            </li>
+            <li id="subcription-side-bar" title="CodingNepal">
+                <img src="./img/subs7.png">
+                <p>CodingNepal</p>
+            </li>
+            <li id="subcription-side-bar" class="down-arrow" title="Show 53 more">
+                <i class="fas fa-chevron-down"></i>
+                <p>Show 53 more</p>
+            </li>
+        </ul>
+        <hr>
+        <p class="more-title">more from youtube</p>
+        <ul class="more-sidebar">
+            <li id="more-side-bar" title="YouTube Premium">
+                <img src="./img/youtube-premium.png">
+                <p>YouTube Premium</p>
+            </li>
+            <li id="more-side-bar" title="Movies">
+                <img src="./img/movies.png">
+                <p>Movies</p>
+            </li>
+            <li id="more-side-bar" title="Gaming">
+                <img src="./img/games.png">
+                <p>Gaming</p>
+            </li>
+            <li id="more-side-bar" title="Live">
+                <img src="./img/stream.png">
+                <p>Live</p>
+            </li>
+            <li id="more-side-bar" title="Sports">
+                <img src="./img/trophy.png">
+                <p>Sports</p>
+            </li>
+        </ul>
+        <hr>
+        <div class="youtube-authorization">
+            <div class="top-authorization">
+                <span>About</span>
+                <span>Press</span>
+                <span>Copyright</span>
+                <span>Contact us</span>
+                <span>Creators</span>
+                <span>Advertise</span>
+                <span>Developers</span>
+            </div>
+            <div class="mid-authorization">
+                <span>Terms</span>
+                <span>Privacy</span>
+                <span>Policy & Safety</span>
+                <span>How YouTube works</span>
+                <span>Test new features</span>
+            </div>
+            <div class="bot-authorization">
+                <p><i class="far fa-copyright"></i> 2022 Google LLC</p>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-layer" id="sidebar-layer"></div>
+
+    <!-- Side Menu section ends here -->
+
+    <!-- Main Content section starts here -->
+
+    <div class="main-video-content" id="main-video-content">
+        <div class="video-container">
+            <iframe width="727" height="409" src="https://www.youtube.com/embed/4ykAepVkG5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="title-video">
+                <p class="main-title">How To Make A Website Like YouTube Using HTML CSS JS | Video Sharing Website Design</p>
+                <div class="video-details">
+                    <div class="left-video-details">
+                        <span>219.354 views</span>
+                        <span><i class="fas fa-circle"></i> Juli 27, 2021</span>
+                    </div>
+                    <div class="right-video-details">
+                        <div title="I like this"><i class="far fa-thumbs-up"></i> 287</div>
+                        <div title="I dislike this"><i class="far fa-thumbs-down"></i> DISLIKE</div>
+                        <div title="Share"><i class="fas fa-share"></i> SHARE</div>
+                        <div title="Clip"><i class="fas fa-cut"></i> CLIP</div>
+                        <div title="Save"><i class="fas fa-plus-circle"></i> Save</div>
+                        <div class="option-details"><i class="fas fa-ellipsis-h"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-video-description">
+                <div class="top-video-description">
+                    <div class="left-logo">
+                        <img src="./img/subs6.png">
+                        <div class="subscriber-info">
+                            <p title="Easy Tutorials">Easy Tutorials</p>
+                            <p>278K subscribers</p>
+                        </div>
+                    </div>
+                    <div class="right-logo">
+                        <div class="subcription-indicator">
+                            <p>SUBSCRIBED</p>
+                        </div>
+                        <div class="bell-icon">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-video-description">
+                    <p class="text">Learn How To Make A Website Like YouTube Using HTML, CSS And JavaScript | Video Sharing Website Design Front-end, Step by step tutorial
+                    <span class="more-text">In this video will make a video sharing website design like YouTube using HTML, CSS and JavaScript and this website design is completely inspired by YouTube. As you can see on my computer screen, this is the website design that we are going to create in this video.
+                    We will create 2 pages, Fist page of this website will be home page with a left sidebar, one banner and list of videos with thumbnail, videos title and channel info, then we will create 2nd page of this website that is video watch page. on this page we will add a video and video information, channel information, list of comments and we will make sidebar with list of suggested videos.
+                    This page is also responsive for small screen devices. We will learn to make this complete website design using HTML, CSS and very small JavaScript. So let's make this website design like YouTube.
+                            
+                    Please Like and Share this video and Help me to get 10k Likes.</span></p>
+
+                    <div class="show-text">
+                        <p>SHOW MORE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-container">
+                <div class="comment-amount">
+                    <p>411 Comments</p>
+                    <div class="short" title="Short comments">
+                        <img src="./img/list.png">
+                        <p>SHORT BY</p>
+                    </div>
+                </div>
+                <div class="input-comment-box">
+                    <div class="input-box">
+                        <img src="./img/profil.jpg">
+                        <input type="text" placeholder="Add a comment...">
+                    </div>
+                </div>
+                <div class="public-comments">
+                    <div class="public-ava">
+                        <img src="./img/subs1.png">
+                    </div>
+                    <div class="public-comment-content">
+                        <div class="top-comment">
+                            <p class="public-name">Santiago B.</p>
+                            <p class="comment-date">9 months ago</p>
+                        </div>
+                        <div class="mid-comment">
+                            <p id="main-comment" class="main-comment">To all the beginners. This video is great for you to practice however most of the things like the videos in the homepage and their details and when u play a video most of the details actually come from the database. So don't get confused. For every video there isn't many HTML pages. They trigger events and data comes from databases.
+
+                            This comment is to help beginners</p>
+                            <button id="read-more-less-btn" onclick="readMore(this)">Read more</button>
+                        </div>
+                        <div class="bottom-comment">
+                            <div class="like-thumb-icon" title="like">
+                                <i class="far fa-thumbs-up"></i>
+                                <p id="like-amount">49</p>
+                            </div>
+                            <div class="dislike-thumb-icon" title="dislike">
+                                <i class="far fa-thumbs-down"></i>
+                            </div>
+                            <div class="reply-icon">
+                                <p>REPLY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="public-comments">
+                    <div class="public-ava">
+                        <img src="./img/subs2.jpg">
+                    </div>
+                    <div class="public-comment-content">
+                        <div class="top-comment">
+                            <p class="public-name">Mukesh KRZ</p>
+                            <p class="comment-date">3 months ago</p>
+                        </div>
+                        <div class="mid-comment">
+                            <p id="main-comment" class="main-comment">Hello Sir, 
+                                I'm Mukesh from WB. 
+                                I am also learning Web development courses from #Udemy. 
+                                But still I don't understand more the concept of the backend development,
+                                #So ... Can you make a video🎥 about backend development for all of us Sir? 
+                                After your practically explanation,  I'm sure we'll understand the concept very easily Sir because you explain the concept specially , that's why we like your videos more then more Sir . 
+                                And I think this website isn't complete.... So I and all hopes you must Do it end after finishing the backend development of this video SIR . 
+                                Thank you very very much Sir</p>
+                            <button id="read-more-less-btn" onclick="readMore(this)">Read more</button>
+                        </div>
+                        <div class="bottom-comment">
+                            <div class="like-thumb-icon" title="like">
+                                <i class="far fa-thumbs-up"></i>
+                                <p id="like-amount">49</p>
+                            </div>
+                            <div class="dislike-thumb-icon" title="dislike">
+                                <i class="far fa-thumbs-down"></i>
+                            </div>
+                            <div class="reply-icon">
+                                <p>REPLY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="public-comments">
+                    <div class="public-ava">
+                        <img src="./img/subs3.jpg">
+                    </div>
+                    <div class="public-comment-content">
+                        <div class="top-comment">
+                            <p class="public-name">Tanush Sathiyaseelan</p>
+                            <p class="comment-date">9 months ago</p>
+                        </div>
+                        <div class="mid-comment">
+                            <p id="main-comment" class="main-comment">This is the content we stay subscribed for! Thank you avinash, you're single handedly teaching millions of us how to do front end</p>
+                            <button id="read-more-less-btn" onclick="readMore(this)">Read more</button>
+                        </div>
+                        <div class="bottom-comment">
+                            <div class="like-thumb-icon" title="like">
+                                <i class="far fa-thumbs-up"></i>
+                                <p id="like-amount">49</p>
+                            </div>
+                            <div class="dislike-thumb-icon" title="dislike">
+                                <i class="far fa-thumbs-down"></i>
+                            </div>
+                            <div class="reply-icon">
+                                <p>REPLY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-list-container">
+            <div class="scrolling-video">
+                <div class="scrolling-video-list">
+                    <div class="scrolling-video-item active">
+                        <div class="scrolling-video-text">
+                            All
+                        </div>
+                    </div>
+                    <div class="scrolling-video-item">
+                        <div class="scrolling-video-text">
+                            CSS
+                        </div>
+                    </div>
+                    <div class="scrolling-video-item">
+                        <div class="scrolling-video-text">
+                            Computer Application
+                        </div>
+                    </div>
+                    <div class="scrolling-video-item">
+                        <div class="scrolling-video-text">
+                            Mixes
+                        </div>
+                    </div>
+                    <div class="scrolling-video-item">
+                        <div class="scrolling-video-text">
+                            Music
+                        </div>
+                    </div>
+                    <div class="scrolling-video-item">
+                        <div class="scrolling-video-text">
+                            Mobile Legends: Bang Bang
+                        </div>
+                    </div>
+                    <div class="scrolling-video-item">
+                        <div class="scrolling-video-text">
+                            Live
+                        </div>
+                    </div>
+                    <div class="scrolling-video-item">
+                        <div class="scrolling-video-text">
+                            Adobe Photoshop
+                        </div>
+                    </div>
+                    <div class="scrolling-video-item">
+                        <div class="scrolling-video-text">
+                            Podcasts
+                        </div>
+                    </div>
+                    <div class="scrolling-video-item">
+                        <div class="scrolling-video-text">
+                            3D Computer Graphics
+                        </div>
+                    </div>
+                    <div class="scrolling-video-item">
+                        <div class="scrolling-video-text">
+                            Noah
+                        </div>
+                    </div>
+                    <div class="scrolling-video-item">
+                        <div class="scrolling-video-text">
+                            Comedy
+                        </div>
+                    </div>
+                    <div class="scrolling-video-item">
+                        <div class="scrolling-video-text">
+                            Ria Ricis
+                        </div>
+                    </div>
+                    <div class="scrolling-video-item">
+                        <div class="scrolling-video-text">
+                            Guitar Chords
+                        </div>
+                    </div>
+                    <div class="scrolling-video-item">
+                        <div class="scrolling-video-text">
+                            Music Indie
+                        </div>
+                    </div>
+                    <div class="scrolling-video-item">
+                        <div class="scrolling-video-text">
+                            Managa
+                        </div>
+                    </div>
+                    <div class="scrolling-video-item">
+                        <div class="scrolling-video-text">
+                            Romaria
+                        </div>
+                    </div>
+                    <div class="scrolling-video-item">
+                        <div class="scrolling-video-text">
+                            Recently uploaded
+                        </div>
+                    </div>
+                </div>
+            <div class="list-video-option">
+                <div class="video-menu-list">
+                    <div class="video-thumbnail">
+                        <img src="./img/thumbnail video2.webp">
+                    </div>
+                    <div class="video-title">
+                        <a href="#" title="BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY">BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY</a>
+                        <p class="channel-name">Btr Kenn</p>
+                        <div class="video-description">
+                            <p class="views">12k views</p>
+                            <p class="date"><i class="fas fa-circle"></i> 3 days ago</p>
+                        </div>  
+                        <div class="video-option">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-menu-list">
+                    <div class="video-thumbnail">
+                        <img src="./img/thumbnail video2.webp">
+                    </div>
+                    <div class="video-title">
+                        <a href="#" title="BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY">BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY</a>
+                        <p class="channel-name">Btr Kenn</p>
+                        <div class="video-description">
+                            <p class="views">12k views</p>
+                            <p class="date"><i class="fas fa-circle"></i> 3 days ago</p>
+                        </div>  
+                        <div class="video-option">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-menu-list">
+                    <div class="video-thumbnail">
+                        <img src="./img/thumbnail video2.webp">
+                    </div>
+                    <div class="video-title">
+                        <a href="#" title="BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY">BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY</a>
+                        <p class="channel-name">Btr Kenn</p>
+                        <div class="video-description">
+                            <p class="views">12k views</p>
+                            <p class="date"><i class="fas fa-circle"></i> 3 days ago</p>
+                        </div>  
+                        <div class="video-option">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-menu-list">
+                    <div class="video-thumbnail">
+                        <img src="./img/thumbnail video2.webp">
+                    </div>
+                    <div class="video-title">
+                        <a href="#" title="BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY">BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY</a>
+                        <p class="channel-name">Btr Kenn</p>
+                        <div class="video-description">
+                            <p class="views">12k views</p>
+                            <p class="date"><i class="fas fa-circle"></i> 3 days ago</p>
+                        </div>  
+                        <div class="video-option">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-menu-list">
+                    <div class="video-thumbnail">
+                        <img src="./img/thumbnail video2.webp">
+                    </div>
+                    <div class="video-title">
+                        <a href="#" title="BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY">BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY</a>
+                        <p class="channel-name">Btr Kenn</p>
+                        <div class="video-description">
+                            <p class="views">12k views</p>
+                            <p class="date"><i class="fas fa-circle"></i> 3 days ago</p>
+                        </div>  
+                        <div class="video-option">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-menu-list">
+                    <div class="video-thumbnail">
+                        <img src="./img/thumbnail video2.webp">
+                    </div>
+                    <div class="video-title">
+                        <a href="#" title="BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY">BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY</a>
+                        <p class="channel-name">Btr Kenn</p>
+                        <div class="video-description">
+                            <p class="views">12k views</p>
+                            <p class="date"><i class="fas fa-circle"></i> 3 days ago</p>
+                        </div>  
+                        <div class="video-option">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-menu-list">
+                    <div class="video-thumbnail">
+                        <img src="./img/thumbnail video2.webp">
+                    </div>
+                    <div class="video-title">
+                        <a href="#" title="BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY">BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY</a>
+                        <p class="channel-name">Btr Kenn</p>
+                        <div class="video-description">
+                            <p class="views">12k views</p>
+                            <p class="date"><i class="fas fa-circle"></i> 3 days ago</p>
+                        </div>  
+                        <div class="video-option">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-menu-list">
+                    <div class="video-thumbnail">
+                        <img src="./img/thumbnail video2.webp">
+                    </div>
+                    <div class="video-title">
+                        <a href="#" title="BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY">BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY</a>
+                        <p class="channel-name">Btr Kenn</p>
+                        <div class="video-description">
+                            <p class="views">12k views</p>
+                            <p class="date"><i class="fas fa-circle"></i> 3 days ago</p>
+                        </div>  
+                        <div class="video-option">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-menu-list">
+                    <div class="video-thumbnail">
+                        <img src="./img/thumbnail video2.webp">
+                    </div>
+                    <div class="video-title">
+                        <a href="#" title="BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY">BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY</a>
+                        <p class="channel-name">Btr Kenn</p>
+                        <div class="video-description">
+                            <p class="views">12k views</p>
+                            <p class="date"><i class="fas fa-circle"></i> 3 days ago</p>
+                        </div>  
+                        <div class="video-option">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-menu-list">
+                    <div class="video-thumbnail">
+                        <img src="./img/thumbnail video2.webp">
+                    </div>
+                    <div class="video-title">
+                        <a href="#" title="BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY">BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY</a>
+                        <p class="channel-name">Btr Kenn</p>
+                        <div class="video-description">
+                            <p class="views">12k views</p>
+                            <p class="date"><i class="fas fa-circle"></i> 3 days ago</p>
+                        </div>  
+                        <div class="video-option">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-menu-list">
+                    <div class="video-thumbnail">
+                        <img src="./img/thumbnail video2.webp">
+                    </div>
+                    <div class="video-title">
+                        <a href="#" title="BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY">BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY</a>
+                        <p class="channel-name">Btr Kenn</p>
+                        <div class="video-description">
+                            <p class="views">12k views</p>
+                            <p class="date"><i class="fas fa-circle"></i> 3 days ago</p>
+                        </div>  
+                        <div class="video-option">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-menu-list">
+                    <div class="video-thumbnail">
+                        <img src="./img/thumbnail video2.webp">
+                    </div>
+                    <div class="video-title">
+                        <a href="#" title="BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY">BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY</a>
+                        <p class="channel-name">Btr Kenn</p>
+                        <div class="video-description">
+                            <p class="views">12k views</p>
+                            <p class="date"><i class="fas fa-circle"></i> 3 days ago</p>
+                        </div>  
+                        <div class="video-option">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-menu-list">
+                    <div class="video-thumbnail">
+                        <img src="./img/thumbnail video2.webp">
+                    </div>
+                    <div class="video-title">
+                        <a href="#" title="BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY">BTR KENN LING LAWAN FRANCO JAGO BANGET , HOOK NYA GAK LOGIS !!! LING FAST HAND GAMEPLAY</a>
+                        <p class="channel-name">Btr Kenn</p>
+                        <div class="video-description">
+                            <p class="views">12k views</p>
+                            <p class="date"><i class="fas fa-circle"></i> 3 days ago</p>
+                        </div>  
+                        <div class="video-option">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content section ends here -->
+    
+<script src="opened.js"></script>
+</body>
+</html>
